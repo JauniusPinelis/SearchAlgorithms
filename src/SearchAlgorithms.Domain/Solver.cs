@@ -7,7 +7,6 @@ namespace SearchAlgorithms.Domain
 	{
 		public (int, int)? GetMatchingPairUsingHash(int[] arr, int x)
 		{
-
 			HashSet<int> values = new HashSet<int>();
 			for (int i = 0; i < arr.Length; i++)
 			{
@@ -29,7 +28,7 @@ namespace SearchAlgorithms.Domain
 					else if (sum > x) left++;
 					else right--;
 				}
-				return null;
+			return null;
 		}
 	}
 }
